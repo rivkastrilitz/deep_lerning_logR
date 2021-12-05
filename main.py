@@ -3,6 +3,8 @@ from __future__ import print_function
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import tensorflow as ts
+# import tensorflow as tf
 
 np.random.seed(42)
 pd.options.mode.chained_assignment = None
@@ -10,8 +12,8 @@ pd.options.mode.chained_assignment = None
 PREPROCESSING
 '''
 
-df_train = pd.read_csv('dtrain.csv')
-df_test = pd.read_csv('dtest.csv')
+df_train = pd.read_csv('train.csv')
+df_test = pd.read_csv('test.csv')
 
 
 def clean(df, thresh):
