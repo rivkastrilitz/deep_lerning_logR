@@ -12,6 +12,7 @@ pd.options.mode.chained_assignment = None
 PREPROCESSING
 '''
 
+# load csv files
 df_train = pd.read_csv('train.csv')
 df_test = pd.read_csv('test.csv')
 
